@@ -1,4 +1,5 @@
-# Azure IoT HUb Addons for webthings.io gateway
+# Azure IoT hub Addons for webthings.io gateway 
+please install the webthings gateway from here: https://github.com/WebThingsIO/gateway
 
 to install and use:
 1. clone it $ git clone https://github.com/JaycHub/fot-azureiothub.git
