@@ -2,8 +2,7 @@
 *.swp
 *.tgz
 *~
-/node_modules/
-/package/
+package/
 SHA256SUMS
 package.sh
 package.sample.sh
