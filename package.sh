@@ -15,6 +15,11 @@ CurrentVersion=$(node -p -e "require('./package.json').version")
 PACKAGE_NAME=$(node -p -e "require('./package.json').name")
 #echo ${PACKAGE_NAME}
 #change to match your installation of teh gateway! This is the
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+reset=`tput sgr0`
+echo "${red}******** please update the path to your runtime webthings ${yellow}GATEWAY_PATH ${red}usually it's at ${green}~/.webthings ${red}********${reset}"
 #PATH to where the gateway is installed locally.
 GATEWAY_PATH=$HOME/.webthings
 #SET TO PROD before shipping, test allows us to bypass checksum check on the gateway which is helpfull for debugging and modifying JS file on the fly
