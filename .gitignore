@@ -1,3 +1,13 @@
+*.sha256sum
+*.swp
+*.tgz
+*~
+/node_modules/
+/package/
+SHA256SUMS
+package.sh
+package.sample.sh
+
 # Logs
 logs
 *.log
