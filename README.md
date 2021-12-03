@@ -20,7 +20,7 @@ inspired by https://github.com/tim-hellhake/azure-iot-bridge
 
 # install and use this Addon:
 1. clone it `$ git clone https://github.com/JaycHub/fot-azureiothub.git`
-2. go to fot-azureiothub `$ cd fot-azureiothub`
+2. go inside of fot-azureiothub folder `$ cd fot-azureiothub`
 3. run `$ npm install`
 4. package.sh is teh script that will compile and create a package to be used by webthingsio gateway, it will also copiying directly to .webthing/addons forlder for faster testing assuming you are developing the addon on the same machine that is running the gateway.
 5. so give the package.sh permission to execute : `$ chmod +x package.sh`
