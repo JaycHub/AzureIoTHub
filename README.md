@@ -26,8 +26,9 @@ inspired by https://github.com/tim-hellhake/azure-iot-bridge
 5. so give the package.sh permission to execute : `$ chmod +x package.sh`
 6. give permission to gather-licenses.js that will auto gather and compile all licenses from the node_module package into your LICENSE file: `chmod +x gather-licenses.js`
 7. next run: `$ npm run build`
-8. everytime to change the source code run the build command in step 6 .
-9. Enjoy!
+8. Open the addon page of teh webthings gateway to see the new addon
+9. everytime you change the source code of teh addon run the build command in step 6 .
+10. Enjoy!
 
 # To do:
 1. auto delete the device from Azure IoT hub when it is removed from the gateway's things list
