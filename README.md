@@ -33,3 +33,4 @@ inspired by https://github.com/tim-hellhake/azure-iot-bridge
 # To do:
 1. auto delete the device from Azure IoT hub when it is removed from the gateway's things list
 2. add option to create a digital twin
+3. Update the code to typescript
