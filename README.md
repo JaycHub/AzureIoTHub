@@ -3,6 +3,8 @@ please install the webthings gateway from here: https://github.com/WebThingsIO/g
 
 inspired by https://github.com/tim-hellhake/azure-iot-bridge 
 
+the code is heavilly commented please check out the source code /src/
+
 # Create an IoT Hub
 1. Go to https://portal.azure.com/#create/hub
 2. Search for IoT Hub
