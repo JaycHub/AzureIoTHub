@@ -1,7 +1,24 @@
 # Azure IoT hub Addons for webthings.io gateway 
 please install the webthings gateway from here: https://github.com/WebThingsIO/gateway
 
-to install and use:
+inspired by https://github.com/tim-hellhake/azure-iot-bridge 
+
+# Create an IoT Hub
+1. Go to https://portal.azure.com/#create/hub
+2. Search for IoT Hub
+3. Click on Create
+4. Create your hub
+5. Wait for the deployment to be finished
+6. Under Deployment detail: click on our hub resource
+7. Go to Shared access policies
+8. Click on the iothubowner
+9. Copy the Connection string — primary key
+10. Add the connection string from step 9 to the config
+11. Go to http://[your-gateway]/oauth/authorize?response_type=code&client_id=local-token&scope=/things:readwrite
+12. Create a token
+13. Add the token to the config
+
+# install and use this Addon:
 1. clone it $ git clone https://github.com/JaycHub/fot-azureiothub.git
 2. cd to fot-azureiothub $ cd fot-azureiothub
 3. run `$ npm install`
