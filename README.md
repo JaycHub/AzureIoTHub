@@ -22,7 +22,7 @@ inspired by https://github.com/tim-hellhake/azure-iot-bridge
 1. clone it `$ git clone https://github.com/JaycHub/fot-azureiothub.git`
 2. go inside of fot-azureiothub folder `$ cd fot-azureiothub`
 3. run `$ npm install`
-4. package.sh is teh script that will compile and create a package to be used by webthingsio gateway, it will also copiying directly to .webthing/addons forlder for faster testing assuming you are developing the addon on the same machine that is running the gateway.
+4. package.sh is the script that will compile and create a runtime package that will be used by Webthings gateway, it will also copy it directly to .webthing/addons forlder for faster testing assuming you are developing the addon on the same machine that is running the Webthings gateway.
 5. so give the package.sh permission to execute : `$ chmod +x package.sh`
 6. give permission to gather-licenses.js that will auto gather and compile all licenses from the node_module package into your LICENSE file: `chmod +x gather-licenses.js`
 7. next run: `$ npm run build`
