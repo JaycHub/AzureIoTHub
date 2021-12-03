@@ -26,7 +26,7 @@ inspired by https://github.com/tim-hellhake/azure-iot-bridge
 5. so give the package.sh permission to execute : `$ chmod +x package.sh`
 6. give permission to gather-licenses.js that will auto gather and compile all licenses from the node_module package into your LICENSE file: `chmod +x gather-licenses.js`
 7. next run: `$ npm run build`
-8. Open the addon page of teh webthings gateway to see the new addon
+8. Open the addon page of the webthings gateway to configure the addon by copying teh authorization token from step 12 to the config page of the addon.
 9. everytime you change the source code of teh addon run the build command in step 6 .
 10. Enjoy!
 
