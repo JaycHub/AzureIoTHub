@@ -1,0 +1,63 @@
+{
+  "name": "fot-azureiothub",
+  "version": "1.0.8",
+  "description": "FoT-AzureIoTHub add-on for FoT Gateway",
+  "author": "Base4 Technology",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "licenses": "./gather-licenses.js",
+    "build": "./package.sh"
+  },
+  "homepage": "https://gitlab.com/slackersio/base4-fot-addons/azureiothub-adapter",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/slackersio/base4-fot-addons.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/slackersio/base4-fot-addons/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "nlf": "^2.1.1",
+    "@types/node": "^15.0.2",
+    "@types/uuid": "^8.3.0",
+    "@types/websocket": "^1.0.2",
+    "@types/ws": "^7.4.2",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "gateway-addon": "^1.0.0",
+    "prettier": "^2.3.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "src/fot-azureiothub-adapter.js",
+    "src/index.js",
+    "manifest.json"
+  ],
+  "web_accessible_resources": [
+    "css/*.css",
+    "js/*.js",
+    "views/*.html"
+  ],
+  "content_scripts": [
+    {
+      "css": [],
+      "js": []
+    }
+  ],
+  "dependencies": {
+    "azure-iot-device": "^1.17.3",
+    "azure-iot-device-amqp": "^1.13.3",
+    "azure-iothub": "^1.14.0",
+    "underscore": "^1.13.1",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.34",
+    "webthings-client": "4.1.0"
+  }
+}

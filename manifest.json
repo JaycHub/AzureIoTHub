@@ -1,0 +1,64 @@
+{
+    "author": "Base4",
+    "description": "Connect your devices to an Azure IoT hub",
+    "homepage_url": "https://base4.ma",
+    "id": "fot-azureiothub",
+    "license": "MPL-2.0",
+    "manifest_version": 1,
+    "name": "FoT AzureIoTHub",
+    "short_name": "FoTAzureIoTHub",
+    "version": "1.0.2",
+    "gateway_specific_settings": {
+        "webthings": {
+            "exec": "{nodeLoader} {path}",
+            "primary_type": "adapter",
+            "strict_max_version": "*",
+            "strict_min_version": "0.10.0",
+            "enabled": true
+        }
+    },
+    "options": {
+        "schema": {
+            "type": "object",
+            "required": [],
+            "default": {
+                "updateTwin": false,
+                "minCheckDeviceStatusInterval": 600
+            },
+            "properties": {
+                "accessToken": {
+                    "type": "string",
+                    "title": "Access token for the gateway"
+                },
+                "hubConnectionString": {
+                    "type": "string",
+                    "title": "The connection string for the hub"
+                },
+                "updateTwin": {
+                    "type": "boolean",
+                    "title": "Whether the digital twin should be updated"
+                },
+                "minCheckDeviceStatusInterval": {
+                    "type": "integer",
+                    "title": "The minimum number of seconds between two checks wether a device is activated or not"
+                }
+            }
+        }
+    },
+    "devices": {
+        "type": "object",
+        "patternProperties": {
+            ".*": {
+                "type": "object",
+                "required": [
+                    "primaryKey"
+                ],
+                "properties": {
+                    "primaryKey": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
