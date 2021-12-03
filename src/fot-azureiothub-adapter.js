@@ -217,7 +217,7 @@ class IotHub extends Device {
             const webThingsClient = await WebThingsClient.local(adapterConfig.accessToken);
             webThingsClient.on("connectStateChanged", async (webThingId, connected) => {
                 //this gets triggered for all things in the system, even those not added to the dashboard like Virtual things
-                //so it is important to only update Azure with those in out dashboard
+                //so it is important to only update Azure with those in our dashboard
                 //console.log(`****************************new Connected id=${webThingId} data: ${connected}`);
                 if (connected) {
                     webthingDevicesList.add(webThingId);
