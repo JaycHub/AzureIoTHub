@@ -11,3 +11,8 @@ to install and use:
 7. next run: `$ npm run build`
 8. everytime to change the source code run the build command in step 6 .
 9. Enjoy!
+
+# To do:
+1. auto delete the device from Azure IoT hub when it is removed from the gateway things list
+2. add option to create a digital twin
+3. 
