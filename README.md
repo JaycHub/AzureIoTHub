@@ -13,6 +13,5 @@ to install and use:
 9. Enjoy!
 
 # To do:
-1. auto delete the device from Azure IoT hub when it is removed from the gateway things list
+1. auto delete the device from Azure IoT hub when it is removed from the gateway's things list
 2. add option to create a digital twin
-3. 
